@@ -8,7 +8,7 @@ app.use(cors({ origin: "*" }));
 
 app.use(bodyParser.json());
 
-app.post("/send-email", async (req, res) => {
+app.post("/", async (req, res) => {
   console.log(req.body);
   const { name, email, message } = req.body;
 
